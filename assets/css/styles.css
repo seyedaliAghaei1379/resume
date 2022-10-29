@@ -519,11 +519,12 @@ body.dark-theme {
 
 /*=============== SERVICES ===============*/
 
-.services__container{
+.services__container {
   row-gap: 2.5rem;
   justify-content: center;
 }
-.services__card{
+
+.services__card {
   position: relative;
   width: 228px;
   height: 322px;
@@ -532,20 +533,23 @@ body.dark-theme {
   padding: 3.5rem 1rem;
   border-radius: 7.25rem;
 }
-.services__card i{
+
+.services__card i {
   display: block;
   font-size: 2rem;
   color: var(--title-color);
   margin-bottom: 0.75rem;
   transition: transform .8s;
 }
-.services__title{
+
+.services__title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1.5rem;
 
 }
-.services__border{
+
+.services__border {
   width: 248px;
   height: 342px;
   border: 1.8 solid var(--text-color-light);
@@ -557,65 +561,143 @@ body.dark-theme {
   transition: opacity 0.6s;
   opacity: 0;
 }
-.services__card:hover i{
- transform: rotateY(360deg);
+
+.services__card:hover i {
+  transform: rotateY(360deg);
 }
-.services__card:hover .section__border{
+
+.services__card:hover .section__border {
   opacity: 1;
 }
-.services__description{
 
-}
+.services__description {}
 
 /*=============== PROJECTS ===============*/
-.projects__content{
+.projects__content {
   display: grid;
   justify-content: center;
 
 }
-.projects__container{
+
+.projects__container {
   overflow: initial;
 
 }
-.project__img{
-width: 250px;
-border-radius: .75rem;
-margin-bottom: 1.25rem;
+
+.project__img {
+  width: 250px;
+  border-radius: .75rem;
+  margin-bottom: 1.25rem;
 
 }
-.projects__subtitle{
-font-size: var(--small-font-size);
-color: var(--text-color-light);
+
+.projects__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
 
 }
-.projects__title{
-font-size: var(--h2-font-size);
-margin-bottom: 1.25rem;
-margin: 0.5rem 0 1.25rem;
+
+.projects__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.25rem;
+  margin: 0.5rem 0 1.25rem;
 }
-.projects__button{
-display: inline-flex;
-align-items: center;
-column-gap: 0.5rem;
-color: var(--title-color);
-font-size: var(--small-font-size);
+
+.projects__button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
 }
+
 .projects__button i {
   font-size: 1rem;
   transition: transform 0.3s;
 }
-.projects__button:hover i{
+
+.projects__button:hover i {
   transform: translateX(0.25rem);
 }
 
 /* Swiper class */
+.project__content .swiper-button-prev::after,
+.project__content .swiper-button-next::after {
+  content: "";
+}
 
-
+.project__content .swiper-button-prev,
+.project__content .swiper-button-next {
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: 9rem;
+  color: var(--title-color);
+}
+.projects__container .swiper-button-prev{
+  left: -1rem;
+  top: 4.5rem;
+}
+.projects__container .swiper-button-next{
+  right: -1rem;
+  top: 4.5rem;
+}
+.projects__container .swiper-slide{
+  margin-bottom: 4.5rem;
+}
+.projects__container .swiper-pagination-bullets{
+  bottom: 0;
+}
+.projects__container .swiper-pagination-bullet-active{
+  background-color: var(--title-color);
+}
 /*=============== TESTIMONIAL ===============*/
+.testimonial{
+  position: relative;
+}
+.testimonial__container{
 
+}
+.testimonial__content{
+text-align: center;
+}
+.testimonial__descripiotn{
+font-family: var(--title-font);
+color: var(--title-color);
+margin-bottom: 1.5rem;
+}
+.testimonial__name{
+font-family: var(--body-font);
+font-size: var(--small-font-size);
+margin-bottom: 0.25rem;
+}
+.testimonial__subtitle{
+font-size: var(--smaller-font-size);
+color: var(--text-color-light);   
+}
+.testimonila__img{
+  width: 70px;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 5rem;
+  right: -1.5rem;
+  opacity: 0.1;
+}
 
 /* Swiper class */
+.testimonial__container .swiper-slide{
+  margin-bottom: 4rem;
+}
+.testimonial__container .swiper-button-prev::after,
+.testimonial__container .swiper-button-next::after{
+  content: "";
+}
+.testimonial__container .swiper-button-prev{
 
+}
+.testimonial__container .swiper-button-next{
+  
+}
 
 /*=============== CONTACT ===============*/
 

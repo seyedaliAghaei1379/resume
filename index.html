@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -430,10 +430,10 @@
             <span class="section__subtitle">MOst recent Work</span>
 
             <div class="container section__border">
-                <div class="projects__container">
-                    <div>
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
                         <!--==================== PROJECTS 1 ====================-->
-                        <div class="project__content">
+                        <div class="project__content swiper-slide">
                             <img src="assets/img/project1.jpg" alt="Projects image" class="project__img">
 
                             <div>
@@ -446,7 +446,7 @@
                             </div>
                         </div>
                         <!--==================== PROJECTS 2 ====================-->
-                        <div class="project__content">
+                        <div class="project__content swiper-slide">
                             <img src="assets/img/project2.jpg" alt="Projects image" class="project__img">
 
                             <div>
@@ -459,7 +459,7 @@
                             </div>
                         </div>
                         <!--==================== PROJECTS 3 ====================-->
-                        <div class="project__content">
+                        <div class="project__content swiper-slide">
                             <img src="assets/img/project3.jpg" alt="Projects image" class="project__img">
 
                             <div>
@@ -472,7 +472,7 @@
                             </div>
                         </div>
                         <!--==================== PROJECTS 4 ====================-->
-                        <div class="project__content">
+                        <div class="project__content swiper-slide">
                             <img src="assets/img/project4.jpg" alt="Projects image" class="project__img">
 
                             <div>
@@ -485,13 +485,76 @@
                             </div>
                         </div>
                     </div>
+                    <!-- swipper arrows -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-drop-right-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-drop-left-line"></i>
+                    </div>
+                    <!-- swiper-pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
         <!--==================== TESTIMONIAL ====================-->
         <section class="testimonial section">
+            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My client saying</span>
 
+            <div class="container section__border">
+                <div class="testimonial__container swiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== TESTIMONIAL 1 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__descripiotn">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Quasi, neque eligendi. Fugit vel est esse minus odit porro?
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name">klay harits</h3>
+                                <span class="testimonial__subtitle">client</span>
+                            </div>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 2 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__descripiotn">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Quasi, neque eligendi. Fugit vel est esse minus odit porro?
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name">anna bell</h3>
+                                <span class="testimonial__subtitle">client</span>
+                            </div>
+                        </div>
+
+                        <!--==================== TESTIMONIAL 3 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <p class="testimonial__descripiotn">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Quasi, neque eligendi. Fugit vel est esse minus odit porro?
+                            </p>
+
+                            <div>
+                                <h3 class="testimonial__name">nima xs</h3>
+                                <span class="testimonial__subtitle">client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- swiper arrows -->
+                    <div class="swiper-button-next">
+
+                    </div>
+                    <div class="swiper-button-prev">
+
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/shape-wawes.svg" class="testimonila__img" alt="">
         </section>
 
         <!--==================== CONTACT ====================-->
@@ -513,7 +576,7 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
 
