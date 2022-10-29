@@ -693,9 +693,26 @@ color: var(--text-color-light);
   content: "";
 }
 .testimonial__container .swiper-button-prev{
-
+  font-size: 2rem;
+  color: var(--title-color);
+  width: initial;
+  height: initial;
+  top: initial;
+  bottom: .5rem;
+  left: calc(50% - 3rem);
 }
 .testimonial__container .swiper-button-next{
+  font-size: 2rem;
+  color: var(--title-color);
+  width: initial;
+  height: initial;
+  top: initial;
+  bottom: .5rem;  
+  right: calc(50% - 3rem);
+}
+.testimonial__container .swiper-button-disabled{
+  opacity: initial;
+  color: var(--text-color-light);
   
 }
 
