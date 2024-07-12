@@ -347,6 +347,12 @@ body.dark-theme {
   width: 170px;
   height: 260px;
   background: var(--gradient-color);
+  /*background: url("../img/me.jpg") center center no-repeat ;*/
+  background-size: cover;
+  background-attachment: fixed;
+  background-clip: border-box;
+  outline: 2px black;
+  backface-visibility: visible;
   border-radius: 5.5rem;
   overflow: hidden;
   display: flex;
