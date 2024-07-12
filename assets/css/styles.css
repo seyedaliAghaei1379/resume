@@ -1,6 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -22,7 +21,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Roboto', sans-serif;
+  --body-font: 'myFirstFont', sans-serif;
   --title-font: 'Lora', serif;
   --biggest-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -58,10 +57,12 @@
 }
 
 /*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'myFirstFont', sans-serif
 }
 
 html {
@@ -97,6 +98,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 /*=============== THEME ===============*/
 .nav__buttons {
@@ -339,7 +341,6 @@ body.dark-theme {
   border-radius: 6.25rem;
   place-items: center;
   transition: background .4s;
-
 }
 
 .home__perfil {
@@ -536,7 +537,6 @@ body.dark-theme {
 
 }
 
-.qualification__content {}
 
 .qualification__info {
   display: grid;
@@ -628,7 +628,6 @@ body.dark-theme {
   opacity: 1;
 }
 
-.services__description {}
 
 /*=============== PROJECTS ===============*/
 .projects__content {
@@ -720,7 +719,6 @@ body.dark-theme {
   position: relative;
 }
 
-.testimonial__container {}
 
 .testimonial__content {
   text-align: center;
@@ -789,7 +787,6 @@ body.dark-theme {
 }
 
 /*=============== CONTACT ===============*/
-.contact {}
 
 .contact__container {
   row-gap: 3.5rem;
@@ -953,7 +950,6 @@ body.dark-theme {
   justify-content: center;
 }
 
-.footer__container {}
 
 .footer__list {
   margin: 2.5rem 0;
@@ -1177,7 +1173,7 @@ body.dark-theme {
   }
   .nav__list{
     display: flex;
-    columns-gap:3rem ;
+    column-gap:3rem ;
   }
   .nav__link{
     font-size: var(--normal-font-size);
