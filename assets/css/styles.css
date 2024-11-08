@@ -651,7 +651,9 @@ body.dark-theme {
   width: 250px;
   border-radius: .75rem;
   margin-bottom: 1.25rem;
-
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #b5b4b4;
 }
 
 .projects__subtitle {
